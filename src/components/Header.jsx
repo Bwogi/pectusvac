@@ -53,7 +53,7 @@ export function Header() {
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home">
               {/* <Logo className="h-10 w-auto" /> */}
-              <div className='text-[#4796B0]'><span className='text-center'>Pectus Vac</span> <br /><span className=''>Bell </span>Control app</div>
+              <div className='text-[#4796B0]'><span className='text-center'>Pectus Vac</span> <br /><span className=''>Bell </span>Control Sensor app</div>
             </Link>
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />
