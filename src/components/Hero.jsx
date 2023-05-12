@@ -18,6 +18,8 @@ import logoForbes from '@/images/logos/forbes.svg'
 import logoHuffpost from '@/images/logos/huffpost.svg'
 import logoTechcrunch from '@/images/logos/techcrunch.svg'
 import logoWired from '@/images/logos/wired.svg'
+import AndroidLogo from '@/images/android-os.svg'
+import AppleLogo from '@/images/apple-logo.svg'
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -280,10 +282,10 @@ export function Hero() {
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
-            <h1 className="text-3xl font-medium tracking-tight text-[#26AEAB]">
+            <h1 className="text-3xl font-medium tracking-tight text-gray-800">
             Pectus Vac Sensor App Instructions
             </h1>
-            <p className="mt-6 text-lg text-gray-600">
+            <p className="mt-6 text-lg text-gray-400">
             Here are the instructions for downloading and using the Pectus Vac Sensor App. The Pectus Vac Sensor App can be used to monitor and manage the Pectus Vac Sensor.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
@@ -302,12 +304,13 @@ export function Hero() {
               </div>
               
               <Button
-                // href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 href="#"
                 variant="outline"
               >
-                <PlayIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2.5">Watch the video</span>
+                <div className='flex my-1'>
+                  <PlayIcon className="h-6 w-6 flex-none" />
+                  <span className="ml-2.5 text-[#4796B0] ">Watch the video</span>
+                </div>    
               </Button>
             </div>
           </div>
@@ -320,9 +323,9 @@ export function Hero() {
             </div>
           </div>
           <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
-            {/* <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">
-              As featured in
-            </p> */}
+            <p className="text-center text-sm font-semibold text-gray-600 lg:text-left">
+              Phone operating system:
+            </p>
             <ul
               role="list"
               className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"
@@ -341,6 +344,27 @@ export function Hero() {
                   <Image src={logo} alt={name} className="h-8" unoptimized />
                 </li>
               ))} */}
+              <div className='flex gap-3'>
+              <Button
+                href="#"
+                variant="outline"
+              >
+                  <Image width="24" height="24" src={AndroidLogo} alt="apple logo" />
+                  
+                <span className="ml-2.5 text-gray-400">Android Phone Instructions</span>
+                </Button>
+                <Button
+                href="#"
+                variant="outline"
+              >
+                  <div className='flex justify-center items-center'>
+                    <Image width="24" height="24" src={AppleLogo} alt="apple logo" />
+                    <span className="ml-2.5 text-gray-400">iOS Phone Instructions</span>
+                  </div>
+                
+              </Button>
+              </div>
+              
             </ul>
           </div>
         </div>
