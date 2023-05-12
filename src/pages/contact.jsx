@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="mx-auto max-w-2xl sm:text-center">
         <h2 className="text-3xl font-medium tracking-tight text-gray-800">Contact Us</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-        We're here to help! Feel free to reach out to us with any questions or concerns by using the provided contact information.
+        We are here to help! Feel free to reach out to us with any questions or concerns by using the provided contact information.
         </p>
       </div>
       <div className="mx-auto mt-20 max-w-lg space-y-16">
