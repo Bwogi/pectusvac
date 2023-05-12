@@ -15,8 +15,8 @@ export default function Contact() {
             <ChatBubbleLeftRightIcon className="h-6 w-6 text-white" aria-hidden="true" />
           </div>
           <div>
-            <h3 className="text-base font-semibold leading-7 text-gray-900">Sales support</h3>
-            <p className="mt-2 leading-7 text-gray-600">
+            <h3 className="text-base font-semibold leading-7 text-gray-600">Sales support</h3>
+            <p className="mt-2 leading-7 text-gray-400">
             Our dedicated sales support team is ready to assist you with any inquiries, product information, or assistance you may need.
             </p>
             <p className="mt-4">
@@ -32,8 +32,8 @@ export default function Contact() {
             <ComputerDesktopIcon className="h-6 w-6 text-white" aria-hidden="true" />
           </div>
           <div>
-            <h3 className="text-base font-semibold leading-7 text-gray-900">Technical support</h3>
-            <p className="mt-2 leading-7 text-gray-600">
+            <h3 className="text-base font-semibold leading-7 text-gray-600">Technical support</h3>
+            <p className="mt-2 leading-7 text-gray-400">
             Need technical assistance? Our experienced and knowledgeable technical support team is available to help you troubleshoot any issues and provide solutions.
             </p>
             <p className="mt-4">
