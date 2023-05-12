@@ -309,7 +309,7 @@ export function Hero() {
               >
                 <div className='flex my-1'>
                   <PlayIcon className="h-6 w-6 flex-none" />
-                  <span className="ml-2.5 text-[#4796B0] ">Watch the video</span>
+                  <span className="ml-2.5 text-gray-400 ">Watch the video</span>
                 </div>    
               </Button>
             </div>
