@@ -111,7 +111,7 @@ export function Header() {
                             <MobileNavLink href="#faqs">FAQs</MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
-                            <Button href="#" variant="outline" className="text-[#4796b0]">
+                            <Button href="#contact" variant="outline" className="text-[#4796b0]">
                               Contact Us
                             </Button>
                             {/* <Button href="#">Download the app</Button> */}
@@ -127,7 +127,7 @@ export function Header() {
               Contact Us
             </Button>  */}
             {/* <Button href="#" className="hidden lg:block bg-[#26AEAB] hover:bg-[#21938f]"> */}
-            <Button href="#" className="hidden lg:block bg-[#4796B0] hover:bg-[#21938f]">
+            <Button href="#contact" className="hidden lg:block bg-[#4796B0] hover:bg-[#21938f]">
               Contact Us
             </Button>
           </div>
