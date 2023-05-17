@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import { Popover } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
-
+import Logo from '@/images/pectusvac-logo.jpg'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
+// import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
+import Image from 'next/image'
 
 function MenuIcon(props) {
   return (
@@ -52,8 +53,9 @@ export function Header() {
         <Container className="relative z-50 flex justify-between py-8">
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home">
+              <Image width={90} src={Logo} />
               {/* <Logo className="h-10 w-auto" /> */}
-              <div className='text-[#4796B0]'><span className='text-center'>Pectus Vac</span> <br /><span className=''>Bell </span>Control Sensor app</div>
+              {/* <div className='text-[#4796B0]'><span className='text-center'>Pectus Vac</span> <br /><span className=''>Bell </span>Control Sensor app</div> */}
             </Link>
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />
@@ -111,10 +113,20 @@ export function Header() {
                             <MobileNavLink href="#faqs">FAQs</MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
-                            <Button href="#contact" variant="outline" className="text-[#4796b0]">
+                            <a href='#contact'>
+                            {/* <Button variant="outline" className="text-[#4796b0]">
                               Contact Us
-                            </Button>
-                            {/* <Button href="#">Download the app</Button> */}
+                              </Button> */}
+                              <Button
+                                // href="/co"
+                                variant="outline"
+                              >
+                                <div className='flex my-1'>
+                                  {/* <PlayIcon className="h-6 w-6 flex-none" /> */}
+                                  <span className="ml-2.5 text-gray-400 hover:text-[#4796b0] ">Contact Us</span>
+                                </div>    
+                              </Button>
+                              </a>
                           </div>
                         </Popover.Panel>
                       </>
@@ -123,13 +135,19 @@ export function Header() {
                 </>
               )}
             </Popover>
-            {/* <Button href="/login" variant="outline" className="hidden lg:block border-[#4796B0] text-[#4796B0] hover:text-[#48a9ca] hover:border-[#4796B0]">
+           
+            {/* <Button href="#contact" variant='outline' className='text-white bg-[#048888] border-[#048888] hover:bg-[#4796B0]'>
               Contact Us
-            </Button>  */}
-            {/* <Button href="#" className="hidden lg:block bg-[#26AEAB] hover:bg-[#21938f]"> */}
-            <Button href="#contact" className="hidden lg:block bg-[#4796B0] hover:bg-[#21938f]">
-              Contact Us
-            </Button>
+            </Button> */}
+            <Button
+                href="#contact"
+                variant="outline"
+              >
+                <div className='flex my-1'>
+                  {/* <PlayIcon className="h-6 w-6 flex-none" /> */}
+                  <span className="ml-2.5 text-gray-400 hover:text-[#4796b0] ">Contact Us</span>
+                </div>    
+              </Button>
           </div>
         </Container>
       </nav>

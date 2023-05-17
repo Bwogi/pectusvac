@@ -93,10 +93,10 @@ function BackgroundIllustration(props) {
 function PlayIcon(props) {
   return (
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
-      <circle cx="12" cy="12" r="11.5" stroke="#D4D4D4" />
+      <circle cx="12" cy="12" r="11.5" stroke="#4796b0" />
       <path
         d="M9.5 14.382V9.618a.5.5 0 0 1 .724-.447l4.764 2.382a.5.5 0 0 1 0 .894l-4.764 2.382a.5.5 0 0 1-.724-.447Z"
-        fill="#A3A3A3"
+        fill="#4796b0"
         stroke="#A3A3A3"
       />
     </svg>
@@ -309,7 +309,7 @@ export function Hero() {
               >
                 <div className='flex my-1'>
                   <PlayIcon className="h-6 w-6 flex-none" />
-                  <span className="ml-2.5 text-gray-400 ">Watch the video</span>
+                  <span className="ml-2.5 text-gray-400 hover:text-[#4796b0] ">Watch the video</span>
                 </div>    
               </Button>
             </div>
@@ -323,9 +323,9 @@ export function Hero() {
             </div>
           </div>
           <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
-            <p className="text-center text-sm font-semibold text-gray-600 lg:text-left">
+            {/* <p className="text-center text-sm font-semibold text-gray-600 lg:text-left">
               Phone Type:
-            </p>
+            </p> */}
             <ul
               role="list"
               className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"
@@ -351,7 +351,7 @@ export function Hero() {
               >
                   <Image width="24" height="24" src={AndroidLogo} alt="apple logo" />
                   
-                <span className="ml-2.5 text-gray-400">Android Phone Instructions</span>
+                <span className="ml-2.5 text-gray-500">Android Phone Instructions</span>
                 </Button>
                 <Button
                 href="#"
@@ -359,7 +359,7 @@ export function Hero() {
               >
                   <div className='flex justify-center items-center'>
                     <Image width="24" height="24" src={AppleLogo} alt="apple logo" />
-                    <span className="ml-2.5 text-gray-400">iOS Phone Instructions</span>
+                    <span className="ml-2.5 text-gray-500">iOS Phone Instructions</span>
                   </div>
                 
               </Button>

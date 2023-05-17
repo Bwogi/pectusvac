@@ -18,7 +18,7 @@ const variantStyles = {
   },
   outline: {
     // gray: 'border-gray-400 text-gray-700 hover:border-[#4796B0] active:bg-gray-100 active:text-gray-700/80',
-    gray: 'border-gray-50 text-gray-700 hover:border-gray-300 active:bg-gray-100 active:text-gray-700/80',
+    gray: 'border-gray-300 text-gray-700 hover:border-[#4796B0] hover:text-white active:bg-gray-100 active:text-gray-700/80',
   },
 }
 

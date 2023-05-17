@@ -6,7 +6,7 @@ export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
 
   return [
-    ['Step by Step Guide', '#features'],
+    ['Step by Step Guide', '#guides'],
     ['Using the Bell Control app', '#reviews'],
     // ['Pricing', '#pricing'],
     ['FAQs', '#faqs'],

@@ -26,6 +26,13 @@ export default function Contact() {
             </p>
           </div>
         </div>
+        <div>
+          <ul>
+            <li><a href=""></a> </li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
         
         <div className="flex gap-x-6">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#4796b0]">

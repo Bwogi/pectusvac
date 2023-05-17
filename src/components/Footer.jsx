@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Logo from '@/images/pectusvac-logo.jpg'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { TextField } from '@/components/Fields'
@@ -28,7 +28,8 @@ export function Footer() {
           <div>
             <div className="flex items-center text-gray-900">
               {/* <Logomark className="h-10 w-10 flex-none fill-cyan-500" /> */}
-              <div className='text-[#4796B0]'><span className='text-center'>Pectus Vac</span> <br /><span className=''>Bell </span>Control app</div>
+              <Image width={90} src={Logo} />
+              {/* <div className='text-[#4796B0]'><span className='text-center'>Pectus Vac</span> <br /><span className=''>Bell </span>Control app</div> */}
               {/* <div className="ml-4">
                 <p className="text-base font-semibold">Pocket</p>
                 <p className="mt-1 text-sm">Invest at the perfect time.</p>
@@ -44,20 +45,20 @@ export function Footer() {
               <Image src={qrCode} alt="" unoptimized />
             </div>
             <div className="ml-8 lg:w-64">
-              <p className="text-base font-semibold text-gray-900">
+              <p className="text-base font-semibold text-gray-400">
                 <Link href="#">
                   <span className="absolute inset-0 sm:rounded-2xl" />
                   Download the app
                 </Link>
               </p>
-              <p className="mt-1 text-sm text-gray-700">
+              <p className="mt-1 text-sm text-gray-400">
                 Scan the QR code to download the app from the App Store.
               </p>
             </div>
           </div>
         </div>
         <div className="flex flex-col items-center border-t border-gray-200 pb-12 pt-8 md:flex-row-reverse md:justify-between md:pt-6">
-          <form className="flex w-full justify-center md:w-auto">
+          {/* <form className="flex w-full justify-center md:w-auto">
             <TextField
               type="email"
               aria-label="Email address"
@@ -70,7 +71,10 @@ export function Footer() {
               <span className="hidden lg:inline">Join our newsletter</span>
               <span className="lg:hidden">Join newsletter</span>
             </Button>
-          </form>
+          </form> */}
+          <div className="flex w-full justify-center md:w-auto">
+
+          </div>
           <p className="mt-6 text-sm text-gray-500 md:mt-0">
             &copy; Copyright {new Date().getFullYear()}. All rights reserved.
           </p>
